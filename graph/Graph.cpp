@@ -72,6 +72,11 @@ public:
             int top = stk.top();
             std::cout << top << " ";
             stk.pop();
+
+            if (!seen.count(top)) {
+                seen.insert(top);
+            }
+            
             for (int neighbor: adj_list[top]) {
                 if (seen.find(neighbor) == seen.end()) {
 //                    seen.insert(neighbor);
