@@ -38,6 +38,8 @@ using namespace std;
 //   if flag == true && current = stack.top(), then pop twice from stack, move onto next, mark flag f
 // if we're at the end of the curr and removed = false, then set stop to true
 
+// TOdo: solve with approach to modify i pointer
+
 void print_stack(stack<char> &s) {
     cout << "stack: ";
     auto copy = s;
